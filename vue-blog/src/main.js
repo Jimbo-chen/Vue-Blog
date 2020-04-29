@@ -13,6 +13,11 @@ Vue.directive("rainbow", {
   }
 })
 
+// 自定义过滤函数
+Vue.filter('snippet', function (value) {
+  return value.slice(0, 50);
+})
+
 Vue.config.productionTip = false
 
 new Vue({
