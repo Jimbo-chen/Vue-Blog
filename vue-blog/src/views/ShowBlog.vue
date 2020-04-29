@@ -2,8 +2,11 @@
   <div class="show-blog">
     <h1>博客总览</h1>
     <input type="text" placeholder="请输入搜索关键词" v-model="search" />
+
     <div class="blog-item" v-for="(item,index) in filterBlogs" :key="index">
-      <h3 v-rainbow>{{item.title}}</h3>
+      <router-link v-bind:to="'/detail/'+item.id">
+        <h3 v-rainbow>{{item.title}}</h3>
+      </router-link>
       <p>{{item.body | snippet }}</p>
     </div>
   </div>

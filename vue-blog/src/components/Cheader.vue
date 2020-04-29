@@ -1,7 +1,7 @@
 <template>
   <div class="cheader">
-    <router-link to="/">首页</router-link>|
-    <router-link to="/add">写博客</router-link>
+    <router-link to="/" exact>首页</router-link>|
+    <router-link to="/add" exact>写博客</router-link>
   </div>
 </template>
 
